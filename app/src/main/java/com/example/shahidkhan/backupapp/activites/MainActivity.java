@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     public String current_user ="Ramzan";
     public  String username = "ramzan@gmail.com";
-    private FirebaseAuth firebaseAuth;
+    //private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         //firebaseAuth = FirebaseAuth.getInstance();
-         current_user = firebaseAuth.getInstance().getCurrentUser().getEmail().toString().trim();
-         username = firebaseAuth.getCurrentUser().getDisplayName().toString().trim();
+         //current_user = firebaseAuth.getInstance().getCurrentUser().getEmail().toString().trim();
+         //username = firebaseAuth.getCurrentUser().getDisplayName().toString().trim();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActivityCompat.requestPermissions(this, new String[]{"android.permission.READ_CONTACTS","android.permission.READ_SMS"}, 2);
@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity
         TextView name =header.findViewById(R.id.textviewheadname);
         TextView email =header.findViewById(R.id.textViewheademail);
 
-        name.setText("username");
-        email.setText("current_user");
+        name.setText("Kamal");
+        email.setText("kamal@gmail.com");
         displaySelectedScreen(R.id.nav_home);
     }
 
