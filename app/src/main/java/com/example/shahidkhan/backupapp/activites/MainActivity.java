@@ -1,15 +1,11 @@
-package com.example.shahidkhan.backupappver2.activites;
+package com.example.shahidkhan.backupapp.activites;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -20,13 +16,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.example.shahidkhan.backupappver2.R;
-import com.example.shahidkhan.backupappver2.fragment.ContactBackupFragment;
-import com.example.shahidkhan.backupappver2.fragment.ContactRestoreFragment;
-import com.example.shahidkhan.backupappver2.fragment.Homefragment;
-import com.example.shahidkhan.backupappver2.fragment.SMSBackupFragment;
-import com.example.shahidkhan.backupappver2.fragment.SMSRestoreFragment;
-import com.google.firebase.auth.FirebaseAuth;
+import com.example.shahidkhan.backupapp.R;
+import com.example.shahidkhan.backupapp.fragment.ContactBackupFragment;
+import com.example.shahidkhan.backupapp.fragment.ContactRestoreFragment;
+import com.example.shahidkhan.backupapp.fragment.Homefragment;
+import com.example.shahidkhan.backupapp.fragment.SMSBackupFragment;
+import com.example.shahidkhan.backupapp.fragment.SMSRestoreFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

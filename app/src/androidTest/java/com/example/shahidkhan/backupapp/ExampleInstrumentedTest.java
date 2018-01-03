@@ -1,4 +1,4 @@
-package com.example.shahidkhan.backupappver2;
+package com.example.shahidkhan.backupapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

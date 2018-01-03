@@ -1,31 +1,24 @@
-package com.example.shahidkhan.backupappver2.fragment;
+package com.example.shahidkhan.backupapp.fragment;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
-import com.example.shahidkhan.backupappver2.R;
-import com.example.shahidkhan.backupappver2.model.ContactNumber;
+import com.example.shahidkhan.backupapp.R;
+import com.example.shahidkhan.backupapp.model.ContactNumber;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class ContactBackupFragment extends Fragment {

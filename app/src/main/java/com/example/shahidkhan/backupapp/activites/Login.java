@@ -1,4 +1,4 @@
-package com.example.shahidkhan.backupappver2.activites;
+package com.example.shahidkhan.backupapp.activites;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -12,12 +12,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.shahidkhan.backupappver2.R;
+import com.example.shahidkhan.backupapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.*;
-
-import static com.example.shahidkhan.backupappver2.R.string.email;
 
 /**
  * Created by shahidkhan on 12/17/2017.

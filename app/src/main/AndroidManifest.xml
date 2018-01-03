@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.shahidkhan.backupappver2">
+    package="com.example.shahidkhan.backupapp">
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_SMS" />
@@ -14,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activites.Login"
+        <activity android:name="com.example.shahidkhan.backupapp.activites.Login"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activites.SignupActivity"
+        <activity android:name="com.example.shahidkhan.backupapp.activites.SignupActivity"
             android:label="SignUp">>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activites.MainActivity"
+            android:name="com.example.shahidkhan.backupapp.activites.MainActivity"
             android:label="Home"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

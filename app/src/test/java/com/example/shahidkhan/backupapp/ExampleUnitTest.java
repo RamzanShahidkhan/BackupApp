@@ -1,4 +1,4 @@
-package com.example.shahidkhan.backupappver2;
+package com.example.shahidkhan.backupapp;
 
 import org.junit.Test;
 

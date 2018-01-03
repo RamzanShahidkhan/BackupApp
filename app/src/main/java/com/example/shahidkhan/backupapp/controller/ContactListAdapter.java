@@ -1,4 +1,4 @@
-package com.example.shahidkhan.backupappver2.controller;
+package com.example.shahidkhan.backupapp.controller;
 
 import android.app.Activity;
 import android.support.annotation.NonNull;
@@ -9,23 +9,28 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.shahidkhan.backupappver2.R;
-import com.example.shahidkhan.backupappver2.model.MessagesList;
+
+import com.example.shahidkhan.backupapp.R;
+import com.example.shahidkhan.backupapp.model.ContactNumber;
 
 import java.util.List;
 
 /**
- * Created by shahidkhan on 12/16/2017.
+ * Created by shahidkhan on 12/15/2017.
  */
 
-public class MessagesListAdapter extends ArrayAdapter<MessagesList> {
-    Activity context;
-    private List<MessagesList> messagesList;
-    public MessagesListAdapter(Activity context,List<MessagesList> messagesList) {
-        super(context, 0,messagesList);
+public class ContactListAdapter extends ArrayAdapter<ContactNumber> {
+    private Activity context;
+    private List<ContactNumber> contactList;
+    public ContactListAdapter(Activity context, List<ContactNumber> contactList)
+    {
+        //super(context,android.R.layout.simple_expandable_list_item_2,contactList);
+        super(context,0,contactList);
         this.context = context;
-        this.messagesList = messagesList;
+        this.contactList = contactList;
     }
+
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -35,10 +40,9 @@ public class MessagesListAdapter extends ArrayAdapter<MessagesList> {
         TextView textViewName = (TextView)listViewItem.findViewById(R.id.text_name);
         TextView textViewNumber = (TextView)listViewItem.findViewById(R.id.text_number);
 
-       // MessagesList messages = MessagesList
-        MessagesList messages = messagesList.get(position);
-        textViewName.setText(messages.getSms_address());
-        textViewNumber.setText(messages.getSms_body());
+        ContactNumber contactNumber = contactList.get(position);
+        textViewName.setText(contactNumber.getContactname());
+        textViewNumber.setText(contactNumber.getContactnumber());
 
         return listViewItem;
     }

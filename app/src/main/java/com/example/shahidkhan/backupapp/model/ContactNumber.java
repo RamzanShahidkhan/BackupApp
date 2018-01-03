@@ -1,4 +1,4 @@
-package com.example.shahidkhan.backupappver2.model;
+package com.example.shahidkhan.backupapp.model;
 
 /**
  * Created by shahidkhan on 12/16/2017.

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.shahidkhan.backupappver2.fragment.Homefragment">
+    tools:context="com.example.shahidkhan.backupapp.fragment.Homefragment">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
