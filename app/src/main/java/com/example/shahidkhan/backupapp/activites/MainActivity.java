@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.shahidkhan.backupapp.R;
@@ -22,21 +23,22 @@ import com.example.shahidkhan.backupapp.fragment.ContactRestoreFragment;
 import com.example.shahidkhan.backupapp.fragment.Homefragment;
 import com.example.shahidkhan.backupapp.fragment.SMSBackupFragment;
 import com.example.shahidkhan.backupapp.fragment.SMSRestoreFragment;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     public String current_user ="Ramzan";
     public  String username = "ramzan@gmail.com";
-    //private FirebaseAuth firebaseAuth;
+    private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       // firebaseAuth = FirebaseAuth.getInstance();
-        //current_user = firebaseAuth.getInstance().getCurrentUser().getEmail().toString().trim();
-        //username = firebaseAuth.getCurrentUser().getDisplayName().toString().trim();
+        //firebaseAuth = FirebaseAuth.getInstance();
+         current_user = firebaseAuth.getInstance().getCurrentUser().getEmail().toString().trim();
+         username = firebaseAuth.getCurrentUser().getDisplayName().toString().trim();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActivityCompat.requestPermissions(this, new String[]{"android.permission.READ_CONTACTS","android.permission.READ_SMS"}, 2);
@@ -51,11 +53,14 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        TextView name =(TextView)navigationView.findViewById(R.id.textviewheadname);
-        TextView email =(TextView)navigationView.findViewById(R.id.textViewheademail);
-        //name.setText(username);
-        //email.setText(current_user);
-        //displaySelectedScreen(R.id.nav_home);
+        View header = navigationView.getHeaderView(0);
+
+        TextView name =header.findViewById(R.id.textviewheadname);
+        TextView email =header.findViewById(R.id.textViewheademail);
+
+        name.setText("username");
+        email.setText("current_user");
+        displaySelectedScreen(R.id.nav_home);
     }
 
     @Override

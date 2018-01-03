@@ -69,7 +69,6 @@ public class SMSBackupFragment extends Fragment {
 
         l1 =(ListView)view.findViewById(R.id.list_view_mainAct);
         return view;
-
     }
     public void writeInbox()
     {
