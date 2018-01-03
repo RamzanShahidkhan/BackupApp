@@ -1,0 +1,28 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shahidkhan.backupappver2.fragment.Homefragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Welcome to backup"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Backup your contact and SMS "/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_backup_thin_outline_symbol_in_a_circle"/>
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_icon_silhouette"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/nav_contact_backup"
+            android:icon="@drawable/ic_cloud_backup_up_arrow"
+            android:title="ContactBackup" />
+        <item
+            android:id="@+id/nav_sms_backup"
+            android:icon="@drawable/ic_cloud_backup_up_arrow"
+            android:title="SMSBackup" />
+        <item
+            android:id="@+id/nav_contact_restore"
+            android:icon="@drawable/ic_cloud_storage_download"
+            android:title="RestoreContact" />
+        <item
+            android:id="@+id/nav_sms_restore"
+            android:icon="@drawable/ic_cloud_storage_download"
+            android:title="RestoreSMS" />
+    </group>
+
+
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Logout" />
+
+
+</menu>
